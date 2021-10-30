@@ -1,10 +1,68 @@
+:root {
+  --gray: #565656;
+  --green: #B2FFA9;
+  --orange: #FF4A1C;
+  --darkO: #d62b00;
+  --brown: #81523F;
+  --darkBr: #3F2A2B;
+}
+
 body {
   margin: 0;
   width: 100vw;
+  font-family: 'Source Sans Pro';
+  background-color: var(--gray);
+  color: var(--green);
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Oswald' sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--darkO);
+}
+
+article {
+  background-color: var(--darkBr);
+}
+
+article h3 {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: var(--orange);
+}
+
+table {
+  margin: 2%;
+  padding-bottom: 2%;
+}
+
+tbody {
+  background-color: var(--brown);
 }
 
 .page-header {
   width: 100%;
+  text-align: center;
+}
+
+.colored {
+  color: var(--orange);
+  text-transform: uppercase;
 }
 
 .navigation ul {
@@ -24,5 +82,13 @@ body {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+}
+
+.navigation ul li a:hover {
+  color: var(--darkO);
+}
+
+main {
+  margin: 0 5%;
 }
 /*# sourceMappingURL=style.css.map */
