@@ -91,4 +91,15 @@ tbody {
 main {
   margin: 0 5%;
 }
+
+@media screen and (min-width: 900px) {
+  main {
+    max-width: 50%;
+    margin: auto;
+  }
+  table {
+    width: 90%;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
