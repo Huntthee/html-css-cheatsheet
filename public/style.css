@@ -1,18 +1,9 @@
-:root {
-  --gray: #565656;
-  --green: #B2FFA9;
-  --orange: #FF4A1C;
-  --darkO: #d62b00;
-  --brown: #81523F;
-  --darkBr: #3F2A2B;
-}
-
 body {
   margin: 0;
-  width: 100vw;
+  min-width: 100%;
   font-family: 'Source Sans Pro';
-  background-color: var(--gray);
-  color: var(--green);
+  background-color: #565656;
+  color: #B2FFA9;
 }
 
 h1, h2 {
@@ -26,15 +17,15 @@ h3 {
 }
 
 a {
-  color: var(--orange);
+  color: #FF4A1C;
 }
 
 a:hover {
-  color: var(--darkO);
+  color: #d62b00;
 }
 
 article {
-  background-color: var(--darkBr);
+  background-color: #3F2A2B;
 }
 
 article h3 {
@@ -43,7 +34,7 @@ article h3 {
   width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
-  color: var(--orange);
+  color: #FF4A1C;
 }
 
 table {
@@ -52,7 +43,11 @@ table {
 }
 
 tbody {
-  background-color: var(--brown);
+  background-color: #81523F;
+}
+
+td {
+  padding: 10px;
 }
 
 .page-header {
@@ -61,7 +56,7 @@ tbody {
 }
 
 .colored {
-  color: var(--orange);
+  color: #FF4A1C;
   text-transform: uppercase;
 }
 
@@ -85,17 +80,42 @@ tbody {
 }
 
 .navigation ul li a:hover {
-  color: var(--darkO);
+  color: #d62b00;
 }
 
 main {
   margin: 0 5%;
 }
 
+.intro-text {
+  text-align: center;
+}
+
+.links-article ul {
+  list-style-type: square;
+}
+
+.links-article ul li {
+  padding: 5px;
+}
+
+.links-article ul li a {
+  color: #B2FFA9;
+  text-decoration: none;
+}
+
+.links-article ul li a:hover {
+  color: #FF4A1C;
+}
+
 @media screen and (min-width: 900px) {
   main {
     max-width: 50%;
     margin: auto;
+  }
+  .intro-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   table {
     width: 90%;

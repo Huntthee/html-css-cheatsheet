@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HTML / CSS & JavaScript Cheatsheet</title>
+  <title>HTML / CSS / JavaScript & More Cheatsheet</title>
 
   <link rel="stylesheet" href="./public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,21 +17,26 @@
 
   <!-- Title and Navigation elements -->
   <header class="page-header">
-    <h1>HTML / CSS & JS <span class="colored">Cheatsheet</span></h1>
+    <h1>HTML / CSS / JS & MORE <span class="colored">Cheatsheet</span></h1>
     <nav class="navigation">
       <ul>
         <li><a href="#html">HTML</a></li>
         <li><a href="#css">CSS</a></li>
+        <li><a href="#scss">SCSS</a></li>
         <li><a href="#js">JS</a></li>
+        <li><a href="#react">REACT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!--  -->
+  <!-- Main Content -->
   <main>
+    <p class="intro-text">Welcome to my personal stash of quick-refrence material! Here I've gathered up many of the little things I tend to forget most frequently and stuck them all on a single easy-to-find page.</p>
+    <!-- HTML Cheatsheet Section -->
     <section id="html">
       <h2>HTML</h2>
 
+      <!-- Table Elements Article -->
       <article>
         <h3>Table Elements</h3>
         <table>
@@ -64,8 +69,10 @@
             </tr>
           </tbody>
         </table>
-      </article>
+      </article>  <!-- End Table Elements Article-->
 
+
+      <!-- Semantic HTML Elements Article-->
       <article>
         <h3>Semantic HTML</h3>
         <table>
@@ -102,17 +109,80 @@
             </tr>
           </tbody>
         </table>
+      </article> <!-- End Semantic HTML Elements Article -->
+      
+    </section> <!-- End HTML Cheatsheet Section  --> 
+
+
+    <!-- CSS Cheatsheet Section -->
+    <section id="css">
+      <h2>CSS</h2>
+
+      <article>
+        <h3>Text Styling</h3>
+        <table>
+          <thead>
+            <tr>
+              <td>Property</td>
+              <td>Values</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>text-transform</code></td>
+              <td><code>capitalize</code>, <code>uppercase</code>, <code>lowercase</code>, <code>none</code></td>
+              <td>Specifies how to capitalize an elements text. </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section> <!-- End CSS Cheatsheet Section-->
+
+
+    <!-- SCSS & Sass Cheatsheet Section -->
+    <section id="scss">
+      <h2>SCSS</h2>
+      <article>
+        <h3>Variables</h3>
+        <table>
+          <thead>
+            <tr>
+              <td>Syntax</td>
+              <td>Reference</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>$red: #833;</code></td>
+              <td><code>p {<br>color: $red;<br>}</code></td>
+              <td>Useful for setting color schemes.</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </article>
+
+      <article class="links-article">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://devhints.io/sass">Sass Cheatsheet by Devhints.io</a></li>
+          <li><a href="https://sass-lang.com/documentation/syntax">Official Sass Documentation</a></li>
+        </ul>
       </article>
     </section>
 
-    <section id="css">
-      <h2>CSS</h2>
+
+    <!-- JavaScript Cheatsheet Section -->
+    <section id="js">
+      <h2>JS</h2>
       <article>
         <h3></h3>
         <table>
           <thead>
             <tr>
-
+              <td>Content Coming Soon!</td>
             </tr>
           </thead>
           <tbody>
@@ -124,14 +194,16 @@
       </article>
     </section>
 
-    <section id="js">
-      <h2>JS</h2>
+
+    <!-- React Cheatsheet Section -->
+    <section id="react">
+      <h2>React</h2>
       <article>
         <h3></h3>
         <table>
           <thead>
             <tr>
-
+              <td>Content Coming Soon!</td>
             </tr>
           </thead>
           <tbody>

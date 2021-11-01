@@ -1,11 +1,9 @@
-:root {
-  --gray: #565656;
-  --green: #B2FFA9;
-  --orange: #FF4A1C;
-  --darkO: #d62b00;
-  --brown: #81523F;
-  --darkBr: #3F2A2B;
-}
+$gray: #565656;
+$green: #B2FFA9;
+$orange: #FF4A1C;
+$darkO: #d62b00;
+$brown: #81523F;
+$darkBr: #3F2A2B;
 
 @mixin bigHead {
   font-family: 'Oswald', sans-serif;
@@ -19,12 +17,12 @@
 
 body {
   margin: 0;
-  width: 100vw;
+  min-width: 100%;
 
   font-family:  'Source Sans Pro';
 
-  background-color: var(--gray);
-  color: var(--green);
+  background-color: $gray;
+  color: $green;
 }
 
 h1, h2 {
@@ -36,14 +34,14 @@ h3 {
 }
 
 a {
-  color: var(--orange);
+  color: $orange;
   &:hover {
-    color: var(--darkO);
+    color: $darkO;
   }
 }
 
 article {
-  background-color: var(--darkBr);
+  background-color: $darkBr;
 }
 
 article h3 {
@@ -54,7 +52,7 @@ article h3 {
   padding-top: 2%;
   padding-bottom: 2%;
 
-  color: var(--orange);
+  color: $orange;
 }
 
 table {
@@ -63,7 +61,11 @@ table {
 }
 
 tbody {
-  background-color: var(--brown);
+  background-color: $brown;
+}
+
+td {
+  padding: 10px;
 }
 
 .page-header {
@@ -72,7 +74,7 @@ tbody {
 }
 
 .colored {
-  color: var(--orange);
+  color: $orange;
   text-transform: uppercase;
 }
 
@@ -97,7 +99,7 @@ tbody {
   font-weight: bold;
   
   &:hover {
-    color: var(--darkO);
+    color: $darkO;
   }
 }
 
@@ -105,10 +107,33 @@ main {
   margin: 0 5%;
 }
 
+.intro-text {
+  text-align: center;
+}
+
+.links-article ul {
+  list-style-type: square;
+  li {
+  padding: 5px;
+    a {
+      color: $green;
+      text-decoration: none;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 900px) {
   main {
     max-width: 50%;
     margin: auto;
+  }
+
+  .intro-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   table {
