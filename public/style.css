@@ -24,6 +24,14 @@ a:hover {
   color: #d62b00;
 }
 
+nav {
+  margin: 50px 0;
+}
+
+section {
+  margin-top: 50px;
+}
+
 article {
   background-color: #3F2A2B;
 }
@@ -50,6 +58,11 @@ td {
   padding: 10px;
 }
 
+footer p {
+  margin-top: 50px;
+  padding-left: 15px;
+}
+
 .page-header {
   width: 100%;
   text-align: center;
@@ -64,6 +77,9 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 0;
   list-style-type: none;
@@ -109,6 +125,12 @@ main {
 }
 
 @media screen and (min-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+  nav a {
+    font-size: 24px;
+  }
   main {
     max-width: 50%;
     margin: auto;
@@ -116,6 +138,7 @@ main {
   .intro-text {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 18px;
   }
   table {
     width: 90%;
